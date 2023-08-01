@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.progress_bar {
+    height: 2px;
+    background: red;
+    animation: load 1s ease-in-out;
+}
+
+@keyframes load {
+    0% {
+        width: 5%;
+    }
+
+    10% {
+        width: 10%;
+    }
+
+    30% {
+        width: 30%;
+    }
+
+    40% {
+        width: 30%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    height: 4rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 2rem;
+    margin: 5rem;
+    font-family: 'Sacramento', cursive;
+    color: white;
+    font-size: 26px;
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(216, 216, 216);
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+ul {
+    width: 33%;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li:hover {
+    color: rgb(255, 255, 255);
+    transition: .2s;
+    /* cursor: pointer; */
+}
+
+/* sign in */
+
+.cont-me button {
+    background-color: rgb(171, 118, 255);
+    padding: 0.5rem 0;
+    margin: 0 5rem;
+    border: 0;
+    border-radius: 12px;
+    font-size: 15.3px;
+}
+
+.cont-me button a {
+    padding: 17px;
+}
+
+.cont-me button:hover {
+    background-color: rgb(178, 96, 255);
+    transition: 0.4s;
+}
+
+
+/* main page */
+
+.cont h1 {
+    color: rgb(238, 236, 236);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+.cont {
+    display: flex;
+    height: 80vh;
+    padding: 5rem;
+}
+
+.left-cont {
+    width: 40%;
+}
+
+.dk {
+    width: 70%;
+    font-size: 15px;
+    margin: 40px 0;
+    color: rgb(206, 206, 206);
+}
+
+.btns {
+    margin: 40px 0;
+}
+
+.btn-1 {
+    background-color: rgb(171, 118, 255);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 40px;
+    border: 0;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.btn-2 {
+    background-color: rgba(171, 118, 255, 0);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 40px;
+    margin-left: 20px;
+    border: 1px solid rgb(171, 118, 255);
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.right-cont {
+    width: 60%;
+    display: flex;
+    position: relative;
+}
+
+.box1 {
+    height: 16rem;
+    width: 16rem;
+    background-color: rgb(130, 132, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 4%;
+    right: 7%;
+}
+
+/* card */
+.card {
+    height: 14rem;
+    width: 24rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: 'Noto Sans', sans-serif;
+    z-index: 4;
+    border-radius: 25px;
+    position: absolute;
+    top: 55%;
+    right: 0%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+
+}
+
+.cd_no {
+    font-size: large;
+    word-spacing: 2px;
+}
+
+.cv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: small;
+}
+
+/* circle 2 */
+.box2 {
+    height: 6rem;
+    width: 6rem;
+    background-color: rgb(130, 132, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 105%;
+    right: 7%;
+}
